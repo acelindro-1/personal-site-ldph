@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+    /* video background style */
+  .video-container {
+    position: relative;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Add additional styling as needed for overlay content */
+header {
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px #00000080;
+
+}
+header h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+header h3 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 70px; /* Adjust the value as needed */
+
+}
+
+footer {
+    color: whitesmoke;
+}
+
+
+/* custom button */
+.custom-button {
+    width: 150px; /* Adjust the width as needed */
+    background-color: #FFB6C1; /* Change the background color to your desired color */
+    color: whitesmoke; /* Change the text color to your desired color */
+    border: none; /* Remove the button border */
+}
+
+/* Hover effect (optional) */
+.custom-button:hover {
+    background-color: #FF9AA2; /* Change the background color on hover */
+}
+
+
+/* index1 styles */ 
+
+
+.custom-navbar {
+    background-color: #FFB6C1;
+    box-shadow: 0px 4px 6px #0000001a; /* Adjust the values for your desired shadow effect */
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.navbar-nav .nav-item {
+    display: flex;
+}
+
+ul {
+    padding-right: 30px;
+}
+
+
+/* about us */ 
+.about-us .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align the columns horizontally */
+    align-items: center;    /* Center-align the columns vertically */
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+
+.col-md-4 {
+    flex: 0 0 40%; /* Adjust the width of the image column as needed */
+}
+
+.col-md-8 {
+    flex: 0 0 60%; /* Adjust the width of the text column as needed */
+}
+
+/* Custom button color classes */
+
+
+.with-background {
+    background-color: whitesmoke; /* Change the background color on hover */
+    padding: 20px; /* Adjust the padding as needed */
+}
+
+/* Our Business */
+
+.our-business .container .row {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align the columns horizontally */
+    align-items: center;    /* Center-align the columns vertically */
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+} 
+
+.business-background {
+    background-color: #FFB6C1; /* Change the background color on hover */
+    padding: 20px; /* Adjust the padding as needed */
+}
+
+.business-img {
+    text-align: center; /* Center-align the image horizontally */
+}
+
+.business-img img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .business-img {
+        text-align: center; /* Center-align the image horizontally */
+    }
+}
+    .business-img img {
+        max-width: 80%; /* Reduce the image width for smaller screens */
+        margin: 10px auto; /* Add margin for spacing around the image */
+        padding: 10px; /* Add padding to create*/
+}
+
+
+/* gallery back ground */
+
+.gallery {
+background-color: whitesmoke;
+}
+
+.gallery-title {
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+}
+
+/* Custom styles for carousel images */
+.carousel-inner img {
+    max-width: 100%; /* Adjust the maximum width as needed */
+    height: auto;   /* Automatically adjust the height */
+}
+
+/* socials */
+
+.socials {
+background-color: #FFB6C1;
+padding-bottom: 0.5vh;
+}
+
+.social-head {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+
+.social-buttons {
+        display: flex;
+        justify-content: center; /* Center the buttons horizontally */
+    }
+
+.social-buttons a {
+        margin: 0 5px; /* Adjust the margin to control the space between buttons */
+        text-decoration: none; /* Remove underlines from links */
+        color: #f5f5f5; /* Set the text color */
+        font-size: 20px;
+    }
+
+/* Small screens (e.g., mobile devices) */
+@media (max-width: 767px) {
+    .social-head h3 {
+        font-size: 24px; /* Adjust font size as needed */
+    }
+    .social-head p {
+        font-size: 16px; /* Adjust font size as needed */
+    }
+    .social-buttons a {
+        font-size: 14px; /* Adjust font size as needed */
+    }
+}
+
+/* Medium-sized screens (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .social-head h3 {
+        font-size: 28px; /* Adjust font size as needed */
+    }
+    .social-head p {
+        font-size: 18px; /* Adjust font size as needed */
+    }
+    .social-buttons a {
+        font-size: 16px; /* Adjust font size as needed */
+    }
+}
+
+
+
+
+
+/* Add shadow to the footer */
+.footer {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Adjust values as needed */
+}
+
+/* Change text color for the footer */
+.footer a.navbar-brand {
+    color: #f5f5f5; /* Replace 'YourTextColor' with the desired color value */
+}
+
+
+/* Default style for the icon */
+.return a i {
+    color: #f5f5f5;
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .return a i {
+        font-size: 18px; /* Reduce the font size for smaller screens */
+    }
+}
